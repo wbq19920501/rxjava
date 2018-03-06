@@ -30,6 +30,7 @@ import wbq501.com.rxjava.base.ObserverBase;
 public class HttpUtils {
     private static String TAG = "wbq501.com.rxjava.utils.HttpUtils";
 
+    //登录
     public static void getLoginCode(Map<String, String> parms, final RequestBack requestBack){
         Observable<BaseJson> loginCode = RetrofitFactory.getInstence().API().getLoginCode(parms);
         POST(loginCode,requestBack);
